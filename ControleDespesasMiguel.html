@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Controle de Despesas do joao</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>💰 Controle de Despesas do joao</h2>
+
+    <div class="summary">
+      <div>
+        <h4>Saldo</h4>
+        <p id="balance">R$ 0</p>
+      </div>
+      <div>
+        <h4>Receitas</h4>
+        <p id="money-plus" class="plus">R$ 0</p>
+      </div>
+      <div>
+        <h4>Despesas</h4>
+        <p id="money-minus" class="minus">R$ 0</p>
+      </div>
+    </div>
+
+    <h3>Adicionar gasto</h3>
+
+    <form id="form">
+      <input type="text" id="text" placeholder="Descrição">
+      <input type="number" id="amount" placeholder="Valor (use negativo para despesas)">
+      <input type="text" id="category" placeholder="Categoria">
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <h3>Lista</h3>
+    <ul id="transactions"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
